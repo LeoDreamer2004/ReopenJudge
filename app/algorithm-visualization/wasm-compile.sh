@@ -3,7 +3,7 @@
 emsdk_path=/opt/qt6-wasm/emsdk
 tool_chain_path=/opt/qt6-wasm/lib/cmake/Qt6/qt.toolchain.cmake
 build_dir=cmake-build-debug-emcc
-target_dir=../../website/public/qt-gen/algorithm
+target_dir=../../website/public/algorithm
 
 source $emsdk_path/emsdk_env.sh
 rm -r $target_dir
