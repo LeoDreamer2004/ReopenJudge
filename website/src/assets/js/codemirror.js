@@ -31,6 +31,6 @@ import 'codemirror/addon/fold/foldgutter.js'
 import 'codemirror/addon/fold/indent-fold.js'
 import 'codemirror/addon/fold/markdown-fold.js'
 import 'codemirror/addon/fold/xml-fold.js'
-// 编辑的主题文件
+// theme
 import 'codemirror/theme/monokai.css'
 import 'codemirror/theme/base16-light.css'

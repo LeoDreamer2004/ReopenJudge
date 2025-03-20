@@ -15,12 +15,13 @@ echo '
 ==================================================================================================================
 '
 
+# backend
 cd core
 python manage.py runserver &
 server_pid=$!
 cd ..
 
-
+# frontend
 cd website
 npm run dev &
 client_pid=$!
@@ -29,6 +30,7 @@ cd ..
 echo -e "\e[33m\e[1mBackend running on $server_pid\e[0m"
 echo -e "\e[33m\e[1mFrontend running on $client_pid\e[0m"
 
+# capture ctrl+c
 cleanup() {
     echo -e "\e[33m\e[1mStopping server...\e[0m"
     kill $server_pid $client_pid

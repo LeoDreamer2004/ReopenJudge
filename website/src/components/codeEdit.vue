@@ -31,8 +31,8 @@ import 'codemirror/addon/hint/show-hint';
 export default {
   components: { Codemirror },
   setup() {
-    const code = ref(""); // C++ 编辑器的内容
-    const lang = ref("Python"); // 默认选中 Python
+    const code = ref("");
+    const lang = ref("Python");
 
     const py_opt = {
       mode: 'text/x-python',
@@ -76,3 +76,9 @@ export default {
   },
 };
 </script>
+
+<style>
+.CodeMirror-code {
+  font-size: large !important;
+}
+</style>

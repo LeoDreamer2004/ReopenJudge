@@ -9,12 +9,25 @@ const routes = [
   {
     path: '/ide',
     name: 'IDE',
-    component: () => import('../views/ide/codeIde.vue')
+    component: () => import('../views/ide/onlineIde.vue')
   },
   {
     path: '/algorithm',
     name: 'Algorithm',
     component: () => import('../views/algorithm/algorithmIndex.vue')
+  },
+
+  // 嵌套 problem router
+  {
+    path: '/problems',
+    name: 'Problems',
+    children: [
+      {
+        path: '',
+        name: 'ProblemList',
+        component: () => import('../views/problem/problemList.vue')
+      }
+    ]
   }
 ];
 

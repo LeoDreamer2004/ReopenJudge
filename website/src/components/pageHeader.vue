@@ -13,11 +13,11 @@ export default {
   props: {
     link: {
       type: String,
-      default: "/ide"
+      default: "/"
     },
     display: {
       type: String,
-      default: "首页/在线IDE"
+      default: "首页"
     }
   },
   methods: {
